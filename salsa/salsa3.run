@@ -1,10 +1,11 @@
 reset;
 
-model salsa2.mod;
-data salsa2.dat;
+model salsa3.mod;
+data salsa3.dat;
 
 option solver cplex; # cbc
 
 solve;
 
 display x;
+display produz;
