@@ -1,0 +1,10 @@
+reset;
+
+model allenamento2.mod;
+data allenamento2.dat;
+
+option solver cplex; # cbc
+
+solve;
+
+display x;
