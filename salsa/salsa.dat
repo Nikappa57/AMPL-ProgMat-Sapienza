@@ -1,0 +1,17 @@
+set PROD := ket barb chili;
+set REP  := misc cott conf;
+
+param: prezzo costo prod_min prod_max :=
+ket		2		1		2500	8000
+barb	2.2		1.5		2200	5000
+chili	3		2		4000	4000;
+	
+param: tempo_prod := ket 	barb chili
+misc				0.5		0.5		1
+cott				2.2		3.5		2.5
+conf				0.5		0.6		0.7;
+
+param: tempo_max :=
+misc	5000
+cott	25000
+conf	4500;
