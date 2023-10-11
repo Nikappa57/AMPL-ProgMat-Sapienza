@@ -1,0 +1,33 @@
+set PROD := ket barb chili;
+set REP  := misc cott conf;
+set INGR := pom zucc olio aceto segr;
+set QUAL := dolc acid umami;
+
+param: 	costo_base 	prezzo 	produz :=
+ket		0.4			2		3100
+barb	0.8			2.2		2300
+chili	1.2			3		2400;
+	
+param qual_ingr : 	pom zucc 	olio 	aceto 	segr :=
+dolc				20	100		5		0		30
+acid				30	0		20		100		0
+umami				10	0		45		0		99;
+param qual_min : 	ket barb 	chili :=
+dolc				30	20		15	
+acid				20	15		30
+umami				20	30		40;
+
+param qual_max : 	ket 	barb 	chili :=
+dolc				50		30		35	
+acid				40		25		45
+umami				infinity infinity infinity;
+
+param tempo_prod : 	ket 	barb	chili :=
+misc				0.5		0.5		1
+cott				2.2		3.5		2.5
+conf				0.5		0.6		0.7;
+
+param: 	tempo_max :=
+misc	5000
+cott	25000
+conf	4500;
