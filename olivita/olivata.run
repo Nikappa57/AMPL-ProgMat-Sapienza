@@ -1,0 +1,10 @@
+reset;
+
+model olivata.mod;
+data olivata.dat;
+
+option solver cplex;
+
+solve;
+
+display x;

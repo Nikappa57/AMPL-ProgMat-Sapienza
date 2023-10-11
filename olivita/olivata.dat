@@ -1,0 +1,27 @@
+set FORNITORI := F L MA MO P T;
+set REPARTI := A B C;
+
+
+param: prezzo 	q_min 	q_max resa acidita :=
+F 		15		2			10			22		0.9
+L 		12		2			80			19		0.8
+MA 		10 		2			10			20		1
+MO 		16		2			30			20		0.7
+P 		12		2			10			22		1
+T		30		2			100			26		0.4;		
+
+
+param ore_max_reparto :=
+A	70
+B	55
+C	55;
+
+param temp_lavorazione: A	B	C :=
+F						0.7	0.8	0.8					
+L						1.4	1	0.9
+MA						2	2	1
+MO						0.8	0.9	0.9
+P						1.5	1.5	2
+T						1	1	1;
+param min_quant := 1200;							#litri
+param max_acidita := 0.7;
