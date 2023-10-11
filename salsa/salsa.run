@@ -1,10 +1,12 @@
 reset;
 
-model nome.mod;
-data nome.dat;
+model salsa.mod;
+data salsa.dat;
 
 option solver cplex; # cbc
 
 solve;
 
 display x;
+
+display cosumo_reparti.body, cosumo_reparti.ub;
