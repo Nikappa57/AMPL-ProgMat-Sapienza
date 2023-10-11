@@ -3,7 +3,7 @@ reset;
 model pizza.mod;
 data pizza.dat;
 
-option solver cpelx;
+option solver cplex;
 
 solve;
 

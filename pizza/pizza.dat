@@ -14,12 +14,12 @@ bari	6
 tesc	7;
 
 param: nut_min nut_max :=
-prot	2		infinty
-fibre	2		infinty
-sat		0		infinty
-mono	3		infinty;
+prot	2		infinity
+fibre	2		infinity
+sat		0		infinity
+mono	3		infinity;
 
-param: prot	fibre	sat		mono :=
+param nut_ing : prot	fibre	sat		mono :=
 zz		1	1		0		0
 z		4	2		0		0
 int		5	7		0.01	0.05
