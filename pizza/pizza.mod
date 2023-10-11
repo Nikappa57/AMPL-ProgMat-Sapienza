@@ -22,6 +22,6 @@ subject to olio_p:
 subject to nutrineti{j in NUT}:
 	nut_min[j] <= sum {i in ING} (x[i] * nut_ing[i,j]) / 100 <= nut_max[j]; 
 	
-
+oggi sono molto stanco! forse è zìarrivato il momento di dormire un po'.
 
 	
