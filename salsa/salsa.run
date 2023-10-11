@@ -1,0 +1,10 @@
+reset;
+
+model nome.mod;
+data nome.dat;
+
+option solver cplex; # cbc
+
+solve;
+
+display x;
