@@ -3,10 +3,10 @@ set REP  := misc cott conf;
 set INGR := pom zucc olio aceto segr;
 set QUAL := dolc acid umami;
 
-param: 	costo_base 	prezzo  :=
-ket		0.4			2	
-barb	0.8			2.2	
-chili	1.2			3	;
+param: 	costo_base 	prezzo prod_min prod_max :=
+ket		0.4			2		2500	8000
+barb	0.8			2.2		2200	5000
+chili	1.2			3		2000	4000;
 
 param costo_ingr :=
 pom		0.3
