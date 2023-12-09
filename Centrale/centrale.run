@@ -1,0 +1,12 @@
+reset;
+
+model centrale.mod;
+data centrale.dat;
+
+
+option solver cplex;
+
+solve;
+
+display produzione;
+display y;
