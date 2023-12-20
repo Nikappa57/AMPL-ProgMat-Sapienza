@@ -1,0 +1,11 @@
+reset;
+
+model es.mod;
+data es.dat;
+
+option solver cplex; #  cbc;
+
+solve;
+
+display x, y1, y2, y3;
+

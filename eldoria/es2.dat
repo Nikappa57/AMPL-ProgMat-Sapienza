@@ -1,0 +1,24 @@
+set INV := Difesa Economico Magico Agricola Tecnologico Alleanze Ambientale;
+set PERIODI := Peri1 Peri2 Peri3 Peri4 Peri5;
+
+param budget := 800;
+
+param CostoIniziale := 
+Difesa       100      
+Economico    300     
+Magico       100     
+Agricola     250  
+Tecnologico  150     
+Alleanze     200   
+Ambientale   300;      
+
+param FlussoCassa: Peri1 Peri2  Peri3	 Peri4     Peri5 :=
+Difesa             -50    -50    100     100     100
+Economico           80      80   80      80      80
+Magico             -60     -60  -60      200     200
+Agricola            70      70   70      70      100
+Tecnologico        -40     -40  -40      210     210
+Alleanze            60      60   60      60      60
+Ambientale          80      80   80      80      80;
+
+param TassoInteresse := 0.05;

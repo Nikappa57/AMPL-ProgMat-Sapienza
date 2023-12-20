@@ -1,0 +1,11 @@
+reset;
+
+model es2.mod;
+data es2.dat;
+
+option solver cplex; #  cbc;
+
+solve;
+
+
+display x;
