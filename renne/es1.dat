@@ -1,0 +1,8 @@
+set DIREZIONI := EST NORD;
+set FABBRICHE := F1 F2 F3 F4 F5 F6 F7;
+set BASTONI := B1 B2;
+param distMin := 500;
+
+param distanza: F1 F2 F3 F4 F5 F6 F7 :=
+EST 			0 1000 10 50 400 600 300
+NORD			0 0 800 500 400 100 200;

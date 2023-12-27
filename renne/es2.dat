@@ -1,0 +1,5 @@
+set RENNE := Tod Jimmy Ruud Fred Charlie;
+
+param pi := 3.14;
+param l := 500;
+param h := 300;

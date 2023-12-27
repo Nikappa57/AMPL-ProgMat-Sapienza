@@ -1,0 +1,29 @@
+reset;
+
+model es2.mod;
+data es2.dat;
+
+let x['Tod'] := 0.001;
+let x['Jimmy'] := 0.001;
+let x['Ruud'] := 0.001;
+let x['Fred'] := 0.001;
+let x['Charlie'] := 0.001;
+
+let y['Tod'] := 0.001;
+let y['Jimmy'] := 0.001;
+let y['Ruud'] := 0.001;
+let y['Fred'] := 0.001;
+let y['Charlie'] := 0.001;
+
+let r['Tod'] := 0.001;
+let r['Jimmy'] := 0.001;
+let r['Ruud'] := 0.001;
+let r['Fred'] := 0.001;
+let r['Charlie'] := 0.001;
+
+option solver Couenne;
+
+solve;
+
+display SommaAree;
+
